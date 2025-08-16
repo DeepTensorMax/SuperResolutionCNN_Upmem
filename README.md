@@ -4,6 +4,8 @@ Please find the report under `ACA_Conv_Project.pdf`.
 
 Please note that the Upmem Simulator is extremely slow which is why you need to use extremely small images like `ressources/zebra_small.png` and even then the simulator will need couple of minutes to process the image. 
 
+
+![Image Upscale](example.PNG)
 ## Usage
 
 Since for our development and all our testing we needed to use images consisting of only a few pixels there is a large area at the bottom of the image with is not computed due to kernel sizes. This wouldn't be noticable in larger image. Also, we could only really compare our implementation for correctness against the results of `srcnn_without_upmem.c` which is the CPU-only variant. The problem is, for small images it also produces garbage outputs, because it was trained on much larger images, but on these much larger images it works as intended.  
